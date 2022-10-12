@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 import { plainToInstance } from 'class-transformer';
 
 interface ClassConstructor {
-  new (...args: any[]): Record<string, unknown>;
+  new (...args: any[]): {};
 }
 
 export function Serialize(dto: ClassConstructor) {
